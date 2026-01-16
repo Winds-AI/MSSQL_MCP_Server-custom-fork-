@@ -144,6 +144,12 @@ This server leverages the Model Context Protocol (MCP), a versatile framework th
 - **Path**: Update the path in `args` to point to your actual project location.
 - **CONNECTION_TIMEOUT**: (Optional) Connection timeout in seconds. Defaults to `30` if not set.
 - **TRUST_SERVER_CERTIFICATE**: (Optional) Set to `"true"` to trust self-signed server certificates (useful for development or when connecting to servers with self-signed certs). Defaults to `"false"`.
+- **AZURE_AUTH_MODE**: (Optional) `browser` (default) or `azurecli`.
+
+### Auth Mode Notes
+
+- `browser`: Uses interactive browser login (best for IDEs that can open a browser).
+- `azurecli`: Uses `az login` credentials already on the machine.
 
 ## Sample Configurations
 
